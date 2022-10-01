@@ -1,0 +1,48 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        [
+          "styled-components",
+          {
+            "ssr": true,
+            "displayName": false,
+            "transpileTemplateLiterals": true,
+            "minify": true,
+            "pure": true
+          }
+        ]
+      ]
+    },
+    "development": {
+      "plugins": [
+        [
+          "styled-components",
+          {
+            "ssr": true,
+            "displayName": true,
+            "transpileTemplateLiterals": true,
+            "minify": true,
+            "pure": true,
+            "fileName": true
+          }
+        ]
+      ]
+    }
+  },
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": false,
+        "transpileTemplateLiterals": true,
+        "minify": true,
+        "pure": true
+      }
+    ]
+  ]
+}
