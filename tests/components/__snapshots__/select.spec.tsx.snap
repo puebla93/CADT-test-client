@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select component tests Select matches snapshot 1`] = `
+<div>
+  <select
+    class="sc-bcXHqe hwNYZh"
+  />
+</div>
+`;

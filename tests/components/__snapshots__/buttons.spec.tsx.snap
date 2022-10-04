@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component tests Button matches snapshot 1`] = `
+<div>
+  <button
+    class="sc-gswNZR bRnJVC"
+  >
+    Here goes some text
+  </button>
+</div>
+`;
+
+exports[`Button component tests ButtonsContainer matches snapshot 1`] = `
+<div>
+  <div
+    class="sc-bcXHqe eZAWPk"
+  />
+</div>
+`;
+
+exports[`Button component tests InputButton matches snapshot 1`] = `
+<div>
+  <label
+    class="sc-dkrFOg SnwvQ"
+  >
+    <input
+      accept="image/png, image/jpeg"
+      type="file"
+    />
+    Here goes some text
+  </label>
+</div>
+`;

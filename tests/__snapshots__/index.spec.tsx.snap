@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page test Home page test 1`] = `
+<div>
+  <div
+    class="sc-dkrFOg gTMfdM"
+  >
+    <div
+      class="sc-gswNZR jXYaRP"
+    >
+      <img
+        alt=""
+        src="/placeholder.png"
+      />
+      <img
+        alt=""
+        src="/placeholder.png"
+      />
+    </div>
+    <select
+      class="sc-bcXHqe hwNYZh"
+    >
+      <option
+        value="emboss"
+      >
+        Emboss
+      </option>
+      <option
+        value="gaussianBlur"
+      >
+        Gaussian Blur
+      </option>
+      <option
+        value="cannyEdge"
+      >
+        Canny Edge
+      </option>
+      <option
+        value="grayScale"
+      >
+        Gray Scale
+      </option>
+      <option
+        value="sepia"
+      >
+        Sepia
+      </option>
+    </select>
+    <div
+      class="sc-hLBbgP beUmJm"
+    >
+      <label
+        class="sc-jSUZER gbvLtW"
+      >
+        <input
+          accept="image/png, image/jpeg"
+          type="file"
+        />
+        Upload image
+      </label>
+      <button
+        class="sc-eDvSVe jMKZCv"
+        disabled=""
+        type="submit"
+      >
+        Process image
+      </button>
+    </div>
+  </div>
+</div>
+`;
