@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import ImagesContainer from '../components/image_container'
+import Select from '../components/select'
 import { ButtonsContainer, Button, InputButton } from '../components/buttons'
 import styles from '../styles/Home.module.css'
 
@@ -52,19 +53,18 @@ const Home: NextPage = () => {
         <img src={imageURL} alt='' />
         <img src={filteredImage} alt='' />
       </ImagesContainer>
+      <Select
+        value={filterFunc}
+        onChange={(e) => {setFilterFunc(e.target.value);}}
+      >
+        <option value='emboss'>Emboss</option>
+        <option value='gaussianBlur'>Gaussian Blur</option>
+        <option value='cannyEdge'>Canny Edge</option>
+        <option value='grayScale'>Gray Scale</option>
+        <option value='sepia'>Sepia</option>
+      </Select>
       <ButtonsContainer>
         <InputButton type='file' onChange={uploadToClient} accept='image/png, image/jpeg'>Upload image</InputButton>
-        {/* TODO style this tags */}
-        <select
-          value={filterFunc}
-          onChange={(e) => {setFilterFunc(e.target.value);}}
-        >
-          <option value='emboss'>Emboss</option>
-          <option value='gaussianBlur'>Gaussian Blur</option>
-          <option value='cannyEdge'>Canny Edge</option>
-          <option value='grayScale'>Gray Scale</option>
-          <option value='sepia'>Sepia</option>
-        </select>
         <Button type='submit' onClick={processImage} disabled={!image} >Process image</Button>
       </ButtonsContainer>
     </div>
