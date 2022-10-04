@@ -3,25 +3,23 @@ import styled from 'styled-components';
 
 const ButtonsContainer = styled.div`
     display: flex;
-    justify-content: center;
-    margin: 48px 0;
+    margin: 24px 0 48px;
 `;
 
 
 const Button = styled.button`
     background-color: ${({disabled}) => (disabled ? '#6b6b6b' : '#00a8b5')};
-    border-radius: 24px;
-    height: 48px;
+    border-radius: 12px;
+    height: 40px;
     line-height: 24px;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: normal;
-    padding: 12px 24px;
+    padding: 8px 24px;
     border: none;
     text-align: center;
     min-width: 80px;
     cursor: ${({disabled}) => (disabled ? 'initial' : 'pointer')};
-    margin-left: 24px;
     
 `;
 
@@ -36,13 +34,13 @@ interface InputButtonProps {
 
 const LabelButton = styled.label`
     background-color: #00a8b5;
-    border-radius: 24px;
-    height: 48px;
+    border-radius: 12px;
+    height: 40px;
     line-height: 24px;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: normal;
-    padding: 12px 24px;
+    padding: 8px 24px;
     margin-right: 24px;
     border: none;
     text-align: center;
