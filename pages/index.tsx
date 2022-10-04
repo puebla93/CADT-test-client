@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
-import React, {useState} from 'react'
+import {useState} from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
-import ImagesContainer from '../components/image_container'
 import Select from '../components/select'
+import ImagesContainer from '../components/image_container'
+import GlobalConatiner from '../components/global_container'
 import { ButtonsContainer, Button, InputButton } from '../components/buttons'
-import styles from '../styles/Home.module.css'
 
 const SERVER_BASE_URL = 'http://localhost:5000';
 const API_V1_PATH = '/api/v1/';
@@ -43,13 +42,12 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <GlobalConatiner>
       <Head>
         <title>CADT Test</title>
       </Head>
 
       <ImagesContainer>
-        {/* TODO use Image component */}
         <img src={imageURL} alt='' />
         <img src={filteredImage} alt='' />
       </ImagesContainer>
@@ -67,7 +65,7 @@ const Home: NextPage = () => {
         <InputButton type='file' onChange={uploadToClient} accept='image/png, image/jpeg'>Upload image</InputButton>
         <Button type='submit' onClick={processImage} disabled={!image} >Process image</Button>
       </ButtonsContainer>
-    </div>
+    </GlobalConatiner>
   )
 }
 
