@@ -8,15 +8,7 @@ const ButtonsContainer = styled.div`
 `;
 
 
-interface ButtonProps {
-    children: React.ReactNode;
-    type: string;
-    accept: string;
-    onChange?: () => void;
-}
-
-
-const Button = styled.button<ButtonProps>`
+const Button = styled.button`
     background-color: ${({disabled}) => (disabled ? '#6b6b6b' : '#00a8b5')};
     border-radius: 24px;
     height: 48px;
