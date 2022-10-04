@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home page test Home page test 1`] = `
+exports[`Home page test Home matches snapshot 1`] = `
 <div>
   <div
     class="sc-dkrFOg gTMfdM"

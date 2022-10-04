@@ -24,7 +24,7 @@ exports[`Button component tests InputButton matches snapshot 1`] = `
     class="sc-dkrFOg SnwvQ"
   >
     <input
-      accept="image/png, image/jpeg"
+      accept="image/png"
       type="file"
     />
     Here goes some text
